@@ -10,6 +10,8 @@ let dataBase = [
         { date: "0000/00/00", day: "---", lesson: "150", code: "85", wasted: "---", study: "", english: "" },
         { date: "1401/11/16", day: "sunday", lesson: "0", code: "140", wasted: "90", study: "", english: "" },
         { date: "1401/11/17", day: "monday", lesson: "0", code: "200", wasted: "135", study: "0", english: "0" },
+        { date: "1401/11/18", day: "tuesday", lesson: "0", code: "120", wasted: "40", study: "23", english: "23" },
+        { date: "1401/11/19", day: "wendesday", lesson: "90", code: "144", wasted: "120", study: "0", english: "27" },
     ],
     // Amin
     amin = [
@@ -17,6 +19,8 @@ let dataBase = [
         { date: "0000/00/00", day: "---", lesson: "150", code: "300", wasted: "---", study: "", english: "" },
         { date: "1401/11/16", day: "sunday", lesson: "0", code: "240", wasted: "100", study: "", english: "" },
         { date: "1401/11/17", day: "monday", lesson: "0", code: "150", wasted: "150", study: "0", english: "60" },
+        { date: "1401/11/18", day: "tuesday", lesson: "150", code: "20", wasted: "60", study: "0", english: "0" },
+        { date: "1401/11/19", day: "wendesday", lesson: "90", code: "120", wasted: "40", study: "0", english: "60" },
     ],
     // Abbas
     abbas = [
@@ -24,6 +28,8 @@ let dataBase = [
         { date: "0000/00/00", day: "---", lesson: "---", code: "0", wasted: "---", study: "", english: "" },
         { date: "1401/11/16", day: "sunday", lesson: "0", code: "60", wasted: "300", study: "", english: "" },
         { date: "1401/11/17", day: "monday", lesson: "30", code: "0", wasted: "300", study: "0", english: "0" },
+        { date: "1401/11/18", day: "tuesday", lesson: "120", code: "240", wasted: "90", study: "0", english: "0" },
+        { date: "1401/11/19", day: "wendesday", lesson: "120", code: "0", wasted: "100", study: "20", english: "15" },
     ],
 ];
 let btnContainer = document.querySelector('.btn');

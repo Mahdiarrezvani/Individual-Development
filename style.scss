@@ -32,7 +32,7 @@ body {
 }
 
 .btn {
-    margin-top: 350px;
+    margin-top: 250px;
     transition: all 1s linear;
     button {
         text-transform: capitalize;
@@ -52,7 +52,7 @@ body {
 
 .container-table {
     width: 100%;
-    font-size: 23px;
+    font-size: 20px;
     text-transform: capitalize;
     .namePepole {
         text-transform: uppercase;
@@ -82,6 +82,9 @@ body {
 }
 
 @media screen and (min-width:552px) {
+    .btn {
+        margin-top: 350px;
+    }
     .work {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
