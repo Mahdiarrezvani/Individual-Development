@@ -1,7 +1,7 @@
 let userBtn = [
     { id: 0, name: "mahdiar" },
     { id: 1, name: "amin" },
-    { id: 2, name: "abbas" },
+    { id: 2, name: "amir abbas" },
 ];
 let dataBase = [
     // Mahdiar
@@ -22,7 +22,7 @@ let dataBase = [
         { date: "1401/11/18", day: "tuesday", lesson: "150", code: "20", wasted: "60", study: "0", english: "0" },
         { date: "1401/11/19", day: "wendesday", lesson: "90", code: "120", wasted: "40", study: "0", english: "60" },
     ],
-    // Abbas
+    // Amir Abbas
     abbas = [
         { date: "0000/00/00", day: "---", lesson: "0", code: "180", wasted: "---", study: "", english: "" },
         { date: "0000/00/00", day: "---", lesson: "---", code: "0", wasted: "---", study: "", english: "" },

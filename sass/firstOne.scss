@@ -1,0 +1,36 @@
+@import 'transitin';
+@import 'style.scss';
+* {
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+.subject {
+    text-align: center;
+    font-size: 25px;
+    background-color: $tem-bgColor;
+    color: $tem-text;
+    padding: 3px;
+}
+
+p {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid $tem-bgColor;
+}
+
+.first-one,
+.last-one {
+    text-align: center;
+    color: $tem-text;
+}
+
+.first-one {
+    background-color: $tem-bgColor;
+}
+
+.last-one {
+    background-color: red;
+}
