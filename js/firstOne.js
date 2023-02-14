@@ -107,8 +107,8 @@ let firstOne = document.querySelector('.first-one');
 let lastOne = document.querySelector('.last-one');
 if (subject == "wasted") {
     firstOne.innerHTML = `first-one : 👌${last}👏`;
-    lastOne.innerHTML = `last-one : 👌${first}👏`;
+    lastOne.innerHTML = `last-one : 😒  ${first}🤦‍♂️`;
 } else {
-    lastOne.innerHTML = `last-one : 👌${last}👏`;
+    lastOne.innerHTML = `last-one : 😒${last}🤦‍♂️`;
     firstOne.innerHTML = `first-one : 👌${first}👏`;
 }
