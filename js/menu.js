@@ -1,6 +1,6 @@
 let btnMenu = document.querySelector('.btn-menu');
-let firstOne = document.querySelector('.firstOne');
-let underMenu = document.querySelector('.under-menu');
+let label = document.querySelectorAll('.label');
+let underMenu = document.querySelectorAll('.under-menu');
 let menu = document.querySelector('.menu');
 let isMenu = false;
 btnMenu.addEventListener('click', function() {
@@ -15,12 +15,14 @@ btnMenu.addEventListener('click', function() {
     }
 });
 let is = false;
-firstOne.addEventListener('click', function() {
-    if (is) {
-        underMenu.style.display = 'none';
-        is = false;
-    } else {
-        underMenu.style.display = 'block';
-        is = true;
-    }
+label.forEach(function(e) {
+    e.addEventListener('click', function() {
+        if (is) {
+            e.children[0].style.display = 'none';
+            is = false;
+        } else {
+            e.children[0].style.display = 'block';
+            is = true;
+        }
+    });
 });
