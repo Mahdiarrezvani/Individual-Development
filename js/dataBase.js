@@ -11,6 +11,8 @@ export let dataBase = [
         { date: "1401/11/23", day: "sunday", lesson: "110", code: "0", wasted: "120", study: "13", english: "0" },
         { date: "1401/11/24", day: "monday", lesson: "0", code: "88", wasted: "150", study: "0", english: "0" },
         { date: "1401/11/25", day: "tuesday", lesson: "0", code: "105", wasted: "150", study: "0", english: "25" },
+        { date: "1401/11/26", day: "wendesday", lesson: "0", code: "110", wasted: "130", study: "0", english: "40" },
+        { date: "1401/11/27", day: "thursday", lesson: "23", code: "123", wasted: "100", study: "15", english: "52" },
     ],
     // Amin
     [
@@ -24,6 +26,8 @@ export let dataBase = [
         { date: "1401/11/23", day: "sunday", lesson: "120", code: "30", wasted: "120", study: "30", english: "0" },
         { date: "1401/11/24", day: "monday", lesson: "0", code: "180", wasted: "200", study: "0", english: "0" },
         { date: "1401/11/25", day: "tuesday", lesson: "0", code: "100", wasted: "350", study: "45", english: "0" },
+        { date: "1401/11/26", day: "wendesday", lesson: "0", code: "100", wasted: "120", study: "30", english: "0" },
+        { date: "1401/11/27", day: "thursday", lesson: "0", code: "190", wasted: "300", study: "0", english: "0" },
     ],
     // Amir Abbas
     [
@@ -37,6 +41,8 @@ export let dataBase = [
         { date: "1401/11/23", day: "sunday", lesson: "300", code: "30", wasted: "120", study: "0", english: "0" },
         { date: "1401/11/24", day: "monday", lesson: "0", code: "60", wasted: "300", study: "0", english: "0" },
         { date: "1401/11/25", day: "tuesday", lesson: "0", code: "240", wasted: "120", study: "30", english: "0" },
+        { date: "1401/11/26", day: "wendesday", lesson: "0", code: "0", wasted: "180", study: "15", english: "0" },
+        { date: "1401/11/26", day: "wendesday", lesson: "0", code: "80", wasted: "180", study: "30", english: "0" },
     ],
 ];
 export let userBtn = [
