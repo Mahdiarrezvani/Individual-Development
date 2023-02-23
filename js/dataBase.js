@@ -13,6 +13,11 @@ export let dataBase = [
         { date: "1401/11/25", day: "tuesday", lesson: "0", code: "105", wasted: "150", study: "0", english: "25" },
         { date: "1401/11/26", day: "wendesday", lesson: "0", code: "110", wasted: "130", study: "0", english: "40" },
         { date: "1401/11/27", day: "thursday", lesson: "23", code: "123", wasted: "100", study: "15", english: "52" },
+        { date: "1401/11/28", day: "friday", lesson: "0", code: "230", wasted: "200", study: "12", english: "33" },
+        { date: "1401/11/29", day: "saturday", lesson: "0", code: "110", wasted: "260", study: "0", english: "27" },
+        { date: "1401/11/30", day: "sunday", lesson: "22", code: "38", wasted: "110", study: "11", english: "23" },
+        { date: "1401/12/1", day: "monday", lesson: "90", code: "0", wasted: "30", study: "5", english: "45" },
+        { date: "1401/12/2", day: "tuseday", lesson: "44", code: "17", wasted: "110", study: "0", english: "22" },
     ],
     // Amin
     [
@@ -28,6 +33,11 @@ export let dataBase = [
         { date: "1401/11/25", day: "tuesday", lesson: "0", code: "100", wasted: "350", study: "45", english: "0" },
         { date: "1401/11/26", day: "wendesday", lesson: "0", code: "100", wasted: "120", study: "30", english: "0" },
         { date: "1401/11/27", day: "thursday", lesson: "0", code: "190", wasted: "300", study: "0", english: "0" },
+        { date: "1401/11/28", day: "friday", lesson: "0", code: "200", wasted: "350", study: "0", english: "0" },
+        { date: "1401/11/29", day: "saturday", lesson: "0", code: "240", wasted: "90", study: "0", english: "0" },
+        { date: "1401/11/30", day: "sunday", lesson: "240", code: "90", wasted: "0", study: "0", english: "0" },
+        { date: "1401/12/1", day: "monday", lesson: "100", code: "0", wasted: "30", study: "90", english: "0" },
+        { date: "1401/12/2", day: "tuseday", lesson: "180", code: "0", wasted: "60", study: "0", english: "0" },
     ],
     // Amir Abbas
     [
@@ -43,6 +53,11 @@ export let dataBase = [
         { date: "1401/11/25", day: "tuesday", lesson: "0", code: "240", wasted: "120", study: "30", english: "0" },
         { date: "1401/11/26", day: "wendesday", lesson: "0", code: "0", wasted: "180", study: "15", english: "0" },
         { date: "1401/11/26", day: "wendesday", lesson: "0", code: "80", wasted: "180", study: "30", english: "0" },
+        { date: "1401/11/28", day: "friday", lesson: "0", code: "240", wasted: "180", study: "20", english: "0" },
+        { date: "1401/11/29", day: "saturday", lesson: "60", code: "120", wasted: "180", study: "10", english: "0" },
+        { date: "1401/11/30", day: "sunday", lesson: "120", code: "0", wasted: "180", study: "0", english: "0" },
+        { date: "1401/12/1", day: "monday", lesson: "60", code: "0", wasted: "180", study: "0", english: "0" },
+        { date: "1401/12/2", day: "tuseday", lesson: "150", code: "0", wasted: "60", study: "30", english: "0" },
     ],
 ];
 export let userBtn = [
