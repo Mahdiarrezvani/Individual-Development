@@ -1,16 +1,11 @@
 .transition {
-  -webkit-animation: btnTransition 1.4s alternate forwards linear;
-          animation: btnTransition 1.4s alternate forwards linear;
+  -webkit-animation: btnTransition 1.5s alternate forwards linear;
+          animation: btnTransition 1.5s alternate forwards linear;
 }
 
 .showTable {
-  -webkit-animation: showTable 1s linear;
-          animation: showTable 1s linear;
-}
-
-.welcome {
-  -webkit-animation: welcome 4s forwards ease-out alternate;
-          animation: welcome 4s forwards ease-out alternate;
+  -webkit-animation: showTable 1.5s linear;
+          animation: showTable 1.5s linear;
 }
 
 .closeMenu {
@@ -101,36 +96,6 @@
   }
 }
 
-@-webkit-keyframes welcome {
-  0% {
-    opacity: 0;
-    top: -50px;
-  }
-  50% {
-    opacity: 1;
-    top: 300px;
-  }
-  100% {
-    top: 500px;
-    opacity: 0;
-  }
-}
-
-@keyframes welcome {
-  0% {
-    opacity: 0;
-    top: -50px;
-  }
-  50% {
-    opacity: 1;
-    top: 300px;
-  }
-  100% {
-    top: 500px;
-    opacity: 0;
-  }
-}
-
 @-webkit-keyframes openMenu {
   from {
     -webkit-transform: translateX(-165px);
@@ -178,6 +143,35 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+.container-a {
+  background-color: rebeccapurple;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 15px;
+  background-color: #222;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.container-a .result-a {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.container-a .result-a p:nth-child(even) {
+  text-align: end;
+}
+
+.container-a .result-a .name {
+  color: #fffb00;
+}
+
+.container-a .result-a p {
+  margin-bottom: 15px;
 }
 
 body {
@@ -295,16 +289,6 @@ body .welcome {
   text-transform: capitalize;
 }
 
-.container-table .namePepole {
-  text-transform: uppercase;
-  background-color: greenyellow;
-  color: black;
-  font-size: 25px;
-  text-align: center;
-  padding: 10px 0;
-  font-weight: bold;
-}
-
 .container-table .table {
   text-align: center;
   border-bottom: 2px solid greenyellow;
@@ -340,9 +324,6 @@ body .welcome {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .welcome span {
-    font-size: 27px;
   }
 }
 

@@ -1,5 +1,5 @@
 @import 'transitin';
-$tem-bgColor:greenyellow;
+$tem-bgColor:#eeff00;
 $tem-text:black;
 * {
     margin: 0;
@@ -7,24 +7,8 @@ $tem-text:black;
 }
 
 body {
-    background-color: black;
+    background-color: #101010;
     color: white;
-    .welcome {
-        position: absolute;
-        display: none;
-        background-color: $tem-bgColor;
-        color: $tem-text;
-        font-size: 20px;
-        text-align: center;
-        font-weight: bold;
-        text-transform: capitalize;
-        padding: 80px 0;
-        width: 80%;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        justify-items: center;
-    }
 }
 
 .btn-menu {
@@ -87,7 +71,7 @@ body {
     display: block;
 }
 
-.container-table {
+.container-tables {
     display: none;
 }
 
@@ -110,32 +94,30 @@ body {
     }
 }
 
-.container-table {
-    width: 100%;
-    font-size: 20px;
-    text-transform: capitalize;
-    .namePepole {
-        text-transform: uppercase;
-        background-color: $tem-bgColor;
-        color: $tem-text;
-        font-size: 25px;
-        text-align: center;
-        padding: 10px 0;
-        font-weight: bold;
-    }
-    // 
-    .table {
-        text-align: center;
-        border-bottom: 2px solid $tem-bgColor;
-        .date {
-            margin-top: 10px;
-            display: flex;
-            justify-content: space-around;
-        }
-        p {
-            margin: 20px 0;
-            span {
-                margin-left: 10px;
+.container-tables {
+    // display: grid;
+    // grid-template-columns: repeat(6, 1fr);
+    .container-table:nth-child(even) {}
+    .container-table {
+        display: inline-block;
+        border-radius: 10px;
+        margin: 20px;
+        padding: 15px;
+        background-color: #222;
+        text-transform: capitalize;
+        font-size: 14px;
+        .user-info {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            // grid-template-columns: repeat(2, 350px);
+            p:nth-child(even) {
+                text-align: end;
+            }
+            .name {
+                color: $tem-bgColor;
+            }
+            p {
+                margin-bottom: 15px;
             }
         }
     }
@@ -144,23 +126,5 @@ body {
 @media screen and (min-width:552px) {
     .btn {
         padding-top: 350px;
-    }
-    .work {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 80px;
-        align-items: center;
-    }
-    .welcome {
-        span {
-            font-size: 27px;
-        }
-    }
-}
-
-@media screen and (min-width:992px) {
-    .work {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
     }
 }

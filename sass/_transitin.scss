@@ -1,13 +1,9 @@
 .transition {
-    animation: btnTransition 1.4s alternate forwards linear;
+    animation: btnTransition 1.5s alternate forwards linear;
 }
 
 .showTable {
-    animation: showTable 1s linear;
-}
-
-.welcome {
-    animation: welcome 4s forwards ease-out alternate;
+    animation: showTable 1.5s linear;
 }
 
 .closeMenu {
@@ -48,21 +44,6 @@
     }
     to {
         opacity: 1;
-    }
-}
-
-@keyframes welcome {
-    0% {
-        opacity: 0;
-        top: -50px;
-    }
-    50% {
-        opacity: 1;
-        top: 300px;
-    }
-    100% {
-        top: 500px;
-        opacity: 0;
     }
 }
 

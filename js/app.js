@@ -3,52 +3,42 @@ import { userBtn } from './dataBase.js';
 let btnContainer = document.querySelector('.btn');
 addButtons();
 let buttons = document.querySelectorAll('.button');
-let containerTable = document.querySelector('.container-table');
-let namePepoleElem = document.querySelector('.namePepole');
-let welcome = document.querySelector('.welcome');
-let textWelcom = document.querySelector('.text-welcom');
+let containerTable = document.querySelector('.container-tables');
 addEventBtn();
 
 function showTable(e) {
     e.target.removeEventListener('click', showTable);
     let value = e.target.value;
     let namePepole = e.target.innerHTML;
-    textWelcom.innerHTML = "welcome, mr " + namePepole;
     btnContainer.classList.add('transition');
     setTimeout(function() {
         show(value, namePepole);
-        welcome.style.display = "block";
-    }, 1400);
+    }, 1500);
 }
 
 
 function show(value, namePepole) {
-    setTimeout(function() {
-        welcome.style.display = "none";
-        addTable(value, namePepole);
-        btnContainer.style.display = "none";
-        containerTable.style.display = "block";
-        containerTable.classList.add('showTable');
-    }, 4000);
+    addTable(value, namePepole);
+    btnContainer.style.display = "none";
+    containerTable.style.display = "block";
+    containerTable.classList.add('showTable');
 }
 
 function addTable(value, namePepole) {
     dataBase[value].forEach(function(e) {
-        namePepoleElem.innerHTML = namePepole;
+        console.log(value);
         containerTable.insertAdjacentHTML('beforeend', `
-    <div class="table showTable">
-        <div class="date">
-            <span>${e.date}</span>
-            <span>${e.day}</span>
-        </div>
-        <div class="work">
-            <p>lesson : <span>${e.lesson} min</span></p>
-            <p>code : <span>${e.code} min</span></p>
-            <p>wasted time : <span>${e.wasted} min</span></p>
-            <p>read book : <span>${e.study} min</span></p>
-            <p>english : <span>${e.english} min</span></p>
+            <div class="container-table">
+            <div class="user-info">
+                <p>${e.date} | ${e.day}</p>
+                <p class="name">${namePepole}</p>
+                <p>lesson: ${e.lesson} min</p>
+                <p>code: ${e.code} min</p>
+                <p>wasted time: ${e.wasted} min</p>
+                <p>study: ${e.study} min</p>
+                <p>english: ${e.english} min</p>
             </div>
-    </div>`);
+        </div>`);
     });
 }
 
