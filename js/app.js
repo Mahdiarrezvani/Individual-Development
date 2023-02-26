@@ -1,5 +1,6 @@
 import { dataBase } from './dataBase.js'
 import { userBtn } from './dataBase.js';
+let backHistory = document.querySelector('.back-history');
 let btnContainer = document.querySelector('.btn');
 addButtons();
 let buttons = document.querySelectorAll('.button');
@@ -53,3 +54,6 @@ function addEventBtn() {
         e.addEventListener('click', showTable);
     });
 }
+// backHistory.addEventListener('click', function() {
+//     history.back();
+// });

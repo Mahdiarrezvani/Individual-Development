@@ -150,14 +150,14 @@ body {
   color: white;
 }
 
-.btn-menu {
+.top-bar button {
   background-color: transparent;
   padding: 10px;
+  margin: 13px;
   border: none;
   color: white;
-  font-size: 20px;
+  font-size: 22px;
   cursor: pointer;
-  float: right;
 }
 
 .menu {
@@ -166,13 +166,21 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  background-color: #90909066;
+  background-color: #222;
   width: 165px;
   height: 100%;
 }
 
+.menu .close-menu-btn {
+  font-size: 25px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  margin: 20px;
+}
+
 .menu ul {
-  margin-top: 40px;
+  padding-left: 13px;
 }
 
 .menu ul a {
@@ -185,16 +193,11 @@ body {
   cursor: pointer;
   -webkit-transition: all 0.6s linear;
   transition: all 0.6s linear;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   text-transform: capitalize;
   text-decoration: none;
   color: white;
-}
-
-.menu ul li:hover {
-  background-color: #eeff00;
-  color: black;
 }
 
 .menu .under-menu {
@@ -202,9 +205,9 @@ body {
   margin: 0;
 }
 
-.menu .under-menu li:hover {
-  background-color: black;
-  color: #eeff00;
+.menu .under-menu li {
+  font-size: 18px;
+  font-weight: normal;
 }
 
 .block {
@@ -239,7 +242,8 @@ body {
 .container-tables .container-table {
   display: inline-block;
   border-radius: 10px;
-  margin: 20px;
+  margin: 10px 25px;
+  width: 260px;
   padding: 15px;
   background-color: #222;
   text-transform: capitalize;

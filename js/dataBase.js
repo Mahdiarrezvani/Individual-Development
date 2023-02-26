@@ -18,6 +18,9 @@ export let dataBase = [
         { date: "1401/11/30", day: "sunday", lesson: "22", code: "38", wasted: "110", study: "11", english: "23" },
         { date: "1401/12/1", day: "monday", lesson: "90", code: "0", wasted: "30", study: "5", english: "45" },
         { date: "1401/12/2", day: "tuseday", lesson: "44", code: "17", wasted: "110", study: "0", english: "22" },
+        { date: "1401/12/3", day: "wendesday", lesson: "0", code: "100", wasted: "130", study: "0", english: "21" },
+        { date: "1401/12/4", day: "thursday", lesson: "114", code: "35", wasted: "130", study: "42", english: "25" },
+        { date: "1401/12/5", day: "friday", lesson: "135", code: "0", wasted: "170", study: "31", english: "23" },
     ],
     // Amin
     [
@@ -38,6 +41,9 @@ export let dataBase = [
         { date: "1401/11/30", day: "sunday", lesson: "240", code: "90", wasted: "0", study: "0", english: "0" },
         { date: "1401/12/1", day: "monday", lesson: "100", code: "0", wasted: "30", study: "90", english: "0" },
         { date: "1401/12/2", day: "tuseday", lesson: "180", code: "0", wasted: "60", study: "0", english: "0" },
+        { date: "1401/12/3", day: "wendesday", lesson: "90", code: "90", wasted: "90", study: "0", english: "0" },
+        { date: "1401/12/4", day: "thursday", lesson: "80", code: "135", wasted: "180", study: "0", english: "0" },
+        { date: "1401/12/5", day: "friday", lesson: "80", code: "157", wasted: "180", study: "0", english: "0" },
     ],
     // Amir Abbas
     [
@@ -58,6 +64,9 @@ export let dataBase = [
         { date: "1401/11/30", day: "sunday", lesson: "120", code: "0", wasted: "180", study: "0", english: "0" },
         { date: "1401/12/1", day: "monday", lesson: "60", code: "0", wasted: "180", study: "0", english: "0" },
         { date: "1401/12/2", day: "tuseday", lesson: "150", code: "0", wasted: "60", study: "30", english: "0" },
+        { date: "1401/12/3", day: "wendesday", lesson: "0", code: "30", wasted: "120", study: "15", english: "0" },
+        { date: "1401/12/4", day: "thursday", lesson: "0", code: "120", wasted: "180", study: "30", english: "0" },
+        { date: "1401/12/5", day: "friday", lesson: "0", code: "30", wasted: "120", study: "10", english: "0" },
     ],
 ];
 export let userBtn = [

@@ -12,22 +12,21 @@ let compareDataBase = [
 ];
 let firstOne = document.querySelector('.firstOne-ul');
 let compare = document.querySelector('.compare-ul');
-let btnMenu = document.querySelector('.btn-menu');
 let label = document.querySelectorAll('.label');
 let underMenu = document.querySelectorAll('.under-menu');
 let menu = document.querySelector('.menu');
-let isMenu = false;
-btnMenu.addEventListener('click', function() {
-    if (isMenu) {
-        isMenu = false;
-        menu.classList.add('closeMenu');
-        menu.classList.remove('openMenu');
-    } else {
-        isMenu = true;
-        menu.classList.add('openMenu');
-        menu.classList.remove('closeMenu');
-    }
+// Button Menu
+let btnOpenMenu = document.querySelector('.btn-open-menu');
+let closeMenuBtn = document.querySelector('.close-menu-btn');
+btnOpenMenu.addEventListener('click', function() {
+    menu.classList.remove('closeMenu');
+    menu.classList.add('openMenu');
 });
+closeMenuBtn.addEventListener('click', function() {
+    menu.classList.remove('openMenu');
+    menu.classList.add('closeMenu');
+});
+// 
 let is = false;
 label.forEach(function(e) {
     e.addEventListener('click', function() {
