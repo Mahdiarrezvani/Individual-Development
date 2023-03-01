@@ -1,6 +1,6 @@
 import { dataBase } from './dataBase.js'
 import { userBtn } from './dataBase.js';
-let backHistory = document.querySelector('.back-history');
+// let backHistory = document.querySelector('.back-history');
 let btnContainer = document.querySelector('.btn');
 addButtons();
 let buttons = document.querySelectorAll('.button');
