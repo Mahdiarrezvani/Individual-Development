@@ -150,15 +150,6 @@ body {
   color: white;
 }
 
-.top-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .top-bar button {
   background-color: transparent;
   padding: 10px;
@@ -170,6 +161,8 @@ body {
 }
 
 .menu {
+  -webkit-transform: translateX(-165px);
+          transform: translateX(-165px);
   position: absolute;
   left: 0;
   top: 0;
@@ -178,8 +171,16 @@ body {
   height: 100%;
 }
 
+.menu .close-menu-btn {
+  font-size: 25px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  margin: 20px;
+}
+
 .menu ul {
-  margin-top: 40px;
+  padding-left: 13px;
 }
 
 .menu ul a {
@@ -241,7 +242,8 @@ body {
 .container-tables .container-table {
   display: inline-block;
   border-radius: 10px;
-  margin: 20px;
+  margin: 10px 25px;
+  width: 260px;
   padding: 15px;
   background-color: #222;
   text-transform: capitalize;
@@ -288,10 +290,14 @@ body {
 }
 
 p {
-  padding: 20px;
+  padding: 10px 20px;
   font-size: 20px;
   font-weight: bold;
   border-bottom: 1px solid #eeff00;
+}
+
+p div {
+  margin: 20px 0;
 }
 
 .first-one,

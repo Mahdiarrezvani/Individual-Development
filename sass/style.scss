@@ -114,7 +114,6 @@ body {
         .user-info {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            // grid-template-columns: repeat(2, 350px);
             p:nth-child(even) {
                 text-align: end;
             }
@@ -131,5 +130,12 @@ body {
 @media screen and (min-width:552px) {
     .btn {
         padding-top: 350px;
+    }
+    .container-tables {
+        .container-table {
+            padding: 20px 15px;
+            width: 340px;
+            font-size: 17px;
+        }
     }
 }

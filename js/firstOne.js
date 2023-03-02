@@ -13,17 +13,18 @@ let sumMahdiar = 0;
 dataBase[0].forEach(function(e) {
     sumMahdiar = sumMahdiar + +e[subject];
 });
-resultMahdiar.innerHTML = `mahdiar : ${sumMahdiar} min`;
+resultMahdiar.innerHTML = `<div>mahdiar : ${sumMahdiar} min</div>${average(sumMahdiar)}`;
 let sumAmin = 0;
 dataBase[1].forEach(function(e) {
     sumAmin = sumAmin + +e[subject];
 });
-resultAmin.innerHTML = `amin : ${sumAmin} min`;
+resultAmin.innerHTML = `<div>amin : ${sumAmin} min</div>${average(sumAmin)}`;
 let sumAbbas = 0;
 dataBase[2].forEach(function(e) {
     sumAbbas = +sumAbbas + +e[subject];
 });
-resultAbbas.innerHTML = `amir abbas : ${sumAbbas}  min`;
+console.log(dataBase[2].length);
+resultAbbas.innerHTML = `<div>amir abbas : ${sumAbbas}</div>${average(sumAbbas)}`;
 // 
 let array = [sumAbbas, sumAmin, sumMahdiar];
 let first = null;
@@ -76,4 +77,10 @@ if (subject == "wasted") {
 } else {
     lastOne.innerHTML = `last-one : 😒${last}🤦‍♂️`;
     firstOne.innerHTML = `first-one : 👌${first}👏`;
+}
+
+function average(person) {
+    // let average = person / dataBase[0].length;
+    let average = Math.ceil(person / dataBase[0].length);
+    return `<div>average per day : ${average}</div>`;
 }
