@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
 .transition {
   -webkit-animation: btnTransition 1.5s alternate forwards linear;
           animation: btnTransition 1.5s alternate forwards linear;
@@ -143,6 +144,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Noto Serif', serif;
 }
 
 body {
@@ -242,7 +244,7 @@ body {
 .container-tables .container-table {
   display: inline-block;
   border-radius: 10px;
-  margin: 10px 25px;
+  margin: 10px 20px;
   width: 260px;
   padding: 15px;
   background-color: #222;
@@ -272,6 +274,11 @@ body {
 @media screen and (min-width: 552px) {
   .btn {
     padding-top: 350px;
+  }
+  .container-tables .container-table {
+    padding: 20px 15px;
+    width: 340px;
+    font-size: 17px;
   }
 }
 

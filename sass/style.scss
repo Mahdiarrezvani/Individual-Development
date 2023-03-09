@@ -1,9 +1,11 @@
 @import 'transitin';
 $tem-bgColor:#eeff00;
 $tem-text:black;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Noto Serif', serif;
 }
 
 body {
@@ -105,7 +107,7 @@ body {
     .container-table {
         display: inline-block;
         border-radius: 10px;
-        margin: 10px 25px;
+        margin: 10px 20px;
         width: 260px;
         padding: 15px;
         background-color: #222;

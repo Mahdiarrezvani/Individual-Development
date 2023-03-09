@@ -1,0 +1,41 @@
+@import 'style.scss';
+.table {
+    text-align: center;
+}
+
+.container-table {
+    display: inline-block;
+    border-radius: 10px;
+    margin: 10px;
+    width: 260px;
+    padding: 15px;
+    background-color: #222;
+    text-transform: capitalize;
+    font-size: 14px;
+    .user-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        p:nth-child(even) {
+            text-align: end;
+        }
+        .name {
+            color: $tem-bgColor;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.btn-container {
+    margin-top: 20px;
+    text-align: center;
+    button {
+        margin-left: 10px;
+        background-color: $tem-bgColor;
+        border: none;
+        width: 55px;
+        height: 55px;
+        font-size: 20px;
+    }
+}

@@ -4,14 +4,16 @@ let firstOneDataBase = [
     { href: 'pages/firstOne.html?subject=wasted', title: 'wasted time' },
     { href: 'pages/firstOne.html?subject=study', title: 'study' },
     { href: 'pages/firstOne.html?subject=code', title: 'code' },
+    { href: 'pages/firstOne.html?subject=learning', title: 'learning' },
 ];
-let compareDataBase = [
-    { href: 'pages/compare.html?name=mahdiar', title: 'mahdiar' },
-    { href: 'pages/compare.html?name=amin', title: 'amin' },
-    { href: 'pages/compare.html?name=amirAbbas', title: 'amir abbas' },
+let month = [
+    { href: 'pages/months.html?name=mahdiar&dataBase=0', title: 'mahdiar' },
+    { href: 'pages/months.html?name=amin&dataBase=1', title: 'amin' },
+    { href: 'pages/months.html?name=amirAbbas&dataBase=2', title: 'amir abbas' },
 ];
+// 
 let firstOne = document.querySelector('.firstOne-ul');
-let compare = document.querySelector('.compare-ul');
+let monthElem = document.querySelector('.month-ul');
 let label = document.querySelectorAll('.label');
 let underMenu = document.querySelectorAll('.under-menu');
 let menu = document.querySelector('.menu');
@@ -46,8 +48,8 @@ firstOneDataBase.forEach(function(info) {
     </a>
     `);
 });
-compareDataBase.forEach(function(info) {
-    compare.insertAdjacentHTML('beforeend', `
+month.forEach(function(info) {
+    monthElem.insertAdjacentHTML('beforeend', `
     <a href="${info.href}">
         <li>${info.title}</li>
     </a>

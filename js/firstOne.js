@@ -5,9 +5,16 @@ let resultAmin = document.querySelector('.amin');
 let subjectElem = document.querySelector('.subject');
 let fewDay = document.querySelector('.few-day');
 //
-fewDay.innerHTML = "in " + dataBase[0].length + " day";
 let url = new URLSearchParams(location.search);
 let subject = url.get('subject');
+switch (subject) {
+    case 'learning':
+        fewDay.innerHTML = "in " + (dataBase[0].length - 30) + " day";
+        break;
+    default:
+        fewDay.innerHTML = "in " + dataBase[0].length + " day";
+        break;
+}
 subjectElem.innerHTML = subject;
 let sumMahdiar = 0;
 dataBase[0].forEach(function(e) {
@@ -23,14 +30,13 @@ let sumAbbas = 0;
 dataBase[2].forEach(function(e) {
     sumAbbas = +sumAbbas + +e[subject];
 });
-console.log(dataBase[2].length);
 resultAbbas.innerHTML = `<div>amir abbas : ${sumAbbas}</div>${average(sumAbbas)}`;
 // 
 let array = [sumAbbas, sumAmin, sumMahdiar];
-let first = null;
-let last = null;
+let firstPerson = null;
+let lastPerson = null;
 (function() {
-    // first
+    // first Person
     let bigger = Math.max(sumAbbas, sumAmin, sumMahdiar);
     let firstPersonNumber = null;
     array.forEach(function(e) {
@@ -38,19 +44,12 @@ let last = null;
             return firstPersonNumber = e;
         }
     });
-    let firstPerson = null;
-    if (firstPersonNumber == sumMahdiar) {
-        firstPerson = "mahdiar";
-    } else if (firstPersonNumber == sumAmin) {
-        firstPerson = "amin";
-    } else {
-        firstPerson = "amir abbas";
-    }
-    first = firstPerson;
+    // 
+    firstPerson = a(firstPersonNumber);
 })();
 
 (function() {
-    // last
+    // last Person
     let smaller = Math.min(sumAbbas, sumAmin, sumMahdiar);
     let lastPersonNumber = null;
     array.forEach(function(e) {
@@ -58,29 +57,44 @@ let last = null;
             return lastPersonNumber = e;
         }
     });
-    let lastPerson = null;
-    if (lastPersonNumber == sumMahdiar) {
-        lastPerson = "mahdiar";
-    } else if (lastPersonNumber == sumAmin) {
-        lastPerson = "amin";
-    } else {
-        lastPerson = "amir abbas";
-    }
-    last = lastPerson;
+    lastPerson = a(lastPersonNumber);
 })();
 // For Wasted Time
 let firstOne = document.querySelector('.first-one');
 let lastOne = document.querySelector('.last-one');
 if (subject == "wasted") {
-    firstOne.innerHTML = `first-one : 👌${last}👏`;
-    lastOne.innerHTML = `last-one : 😒  ${first}🤦‍♂️`;
+    firstOne.innerHTML = `first-one : 👌${lastPerson}👏`;
+    lastOne.innerHTML = `last-one : 😒  ${firstPerson}🤦‍♂️`;
 } else {
-    lastOne.innerHTML = `last-one : 😒${last}🤦‍♂️`;
-    firstOne.innerHTML = `first-one : 👌${first}👏`;
+    lastOne.innerHTML = `last-one : 😒${lastPerson}🤦‍♂️`;
+    firstOne.innerHTML = `first-one : 👌${firstPerson}👏`;
 }
 
 function average(person) {
-    // let average = person / dataBase[0].length;
-    let average = Math.ceil(person / dataBase[0].length);
+    let average = null;
+    switch (subject) {
+        case 'learning':
+            average = Math.ceil(person / (dataBase[0].length - 30));
+            break;
+        default:
+            average = Math.ceil(person / dataBase[0].length);
+            break;
+    }
     return `<div>average per day : ${average}</div>`;
+}
+// نام گذاری رو درست کن
+function a(s) {
+    let person = null;
+    switch (s) {
+        case sumMahdiar:
+            person = "mahdiar";
+            break;
+        case sumAmin:
+            person = "amin";
+            break;
+        case sumAbbas:
+            person = "amir abbas";
+            break;
+    }
+    return person;
 }

@@ -27,7 +27,6 @@ function show(value, namePepole) {
 
 function addTable(value, namePepole) {
     dataBase[value].forEach(function(e) {
-        console.log(value);
         containerTable.insertAdjacentHTML('beforeend', `
             <div class="container-table">
             <div class="user-info">
@@ -38,6 +37,7 @@ function addTable(value, namePepole) {
                 <p>wasted time: ${e.wasted} min</p>
                 <p>study: ${e.study} min</p>
                 <p>english: ${e.english} min</p>
+                <p>learning: ${e.learning} min</p>
             </div>
         </div>`);
     });
