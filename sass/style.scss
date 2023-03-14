@@ -13,6 +13,11 @@ body {
     color: white;
 }
 
+.container {
+    padding: 15px;
+    text-transform: capitalize;
+}
+
 .top-bar {
     // text-align: end;
     button {
@@ -53,7 +58,6 @@ body {
             transition: all 0.6s linear;
             font-size: 22px;
             font-weight: bold;
-            text-transform: capitalize;
             text-decoration: none;
             color: white;
         }
@@ -66,78 +70,50 @@ body {
         }
         margin: 0;
     }
-    // deskTop
-    // .firstOne:hover .under-menu {
-    //     display: block;
-    // }
-    // 
 }
 
-.block {
-    display: block;
-}
-
-.container-tables {
-    display: none;
-}
-
-.btn {
-    padding-top: 250px;
-    transition: all 1s linear;
-    button {
-        text-transform: capitalize;
-        margin: auto;
-        cursor: pointer;
-        display: block;
+// news
+.a {
+    background-color: #222;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    .title {
+        text-align: center;
         font-size: 20px;
+        margin-bottom: 10px;
         font-weight: bold;
-        padding: 15px 0;
-        margin-bottom: 50px;
-        width: 170px;
-        border-radius: 7px;
-        border: none;
-        background-color: $tem-bgColor;
+    }
+    span {
+        color: $tem-bgColor;
+        font-size: 15px;
     }
 }
 
-.container-tables {
-    // display: grid;
-    // grid-template-columns: repeat(6, 1fr);
-    // .container-table:nth-child(even) {}
-    .container-table {
-        display: inline-block;
-        border-radius: 10px;
-        margin: 10px 20px;
-        width: 260px;
-        padding: 15px;
-        background-color: #222;
-        text-transform: capitalize;
-        font-size: 14px;
-        .user-info {
+.news {
+    .first-one {
+        .first-one-container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            p:nth-child(even) {
-                text-align: end;
-            }
-            .name {
-                color: $tem-bgColor;
-            }
-            p {
-                margin-bottom: 15px;
-            }
+        }
+        p {
+            margin: 10px 0;
         }
     }
 }
 
-@media screen and (min-width:552px) {
-    .btn {
-        padding-top: 350px;
+.mofid {
+    div {
+        display: flex;
+        justify-content: space-between;
     }
-    .container-tables {
-        .container-table {
-            padding: 20px 15px;
-            width: 340px;
-            font-size: 17px;
-        }
-    }
+}
+
+.title-news {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
 }

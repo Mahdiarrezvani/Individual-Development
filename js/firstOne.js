@@ -5,6 +5,8 @@ let resultAmin = document.querySelector('.amin');
 let subjectElem = document.querySelector('.subject');
 let fewDay = document.querySelector('.few-day');
 //
+// باید کلین بشه مثل app.js
+// البته همونم باید کلین بشه
 let url = new URLSearchParams(location.search);
 let subject = url.get('subject');
 switch (subject) {

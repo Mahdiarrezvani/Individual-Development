@@ -1,59 +1,97 @@
 import { dataBase } from './dataBase.js'
-import { userBtn } from './dataBase.js';
-// let backHistory = document.querySelector('.back-history');
-let btnContainer = document.querySelector('.btn');
-addButtons();
-let buttons = document.querySelectorAll('.button');
-let containerTable = document.querySelector('.container-tables');
-addEventBtn();
+let mofid = document.querySelector('.mofid');
+let subjects = ['lesson', 'english', 'study', 'code', 'learning', 'wasted'];
+let firstOneContainer = document.querySelector('.first-one-container');
 
-function showTable(e) {
-    e.target.removeEventListener('click', showTable);
-    let value = e.target.value;
-    let namePepole = e.target.innerHTML;
-    btnContainer.classList.add('transition');
-    setTimeout(function() {
-        show(value, namePepole);
-    }, 1500);
-}
-
-
-function show(value, namePepole) {
-    addTable(value, namePepole);
-    btnContainer.style.display = "none";
-    containerTable.style.display = "block";
-    containerTable.classList.add('showTable');
-}
-
-function addTable(value, namePepole) {
-    dataBase[value].forEach(function(e) {
-        containerTable.insertAdjacentHTML('beforeend', `
-            <div class="container-table">
-            <div class="user-info">
-                <p>${e.date} | ${e.day}</p>
-                <p class="name">${namePepole}</p>
-                <p>lesson: ${e.lesson} min</p>
-                <p>code: ${e.code} min</p>
-                <p>wasted time: ${e.wasted} min</p>
-                <p>study: ${e.study} min</p>
-                <p>english: ${e.english} min</p>
-                <p>learning: ${e.learning} min</p>
-            </div>
-        </div>`);
+function workMofid() {
+    let subjectsMofid = ['lesson', 'english', 'study', 'code', 'learning'];
+    let sumMahdiar = 0;
+    let sumAmin = 0;
+    let sumAbbas = 0;
+    dataBase[0].forEach(function(e) {
+        subjectsMofid.forEach(function(subject) {
+            sumMahdiar = sumMahdiar + +e[subject];
+        });
     });
-}
-
-function addButtons() {
-    userBtn.forEach(function(user) {
-        btnContainer.insertAdjacentHTML('beforeend', `<button class="button" value="${user.id}">${user.name}</button>`);
+    dataBase[1].forEach(function(e) {
+        subjectsMofid.forEach(function(subject) {
+            sumAmin = sumAmin + +e[subject];
+        });
     });
-}
-
-function addEventBtn() {
-    buttons.forEach(function(e) {
-        e.addEventListener('click', showTable);
+    dataBase[2].forEach(function(e) {
+        subjectsMofid.forEach(function(subject) {
+            sumAbbas = sumAbbas + +e[subject];
+        });
     });
+    mofid.innerHTML = `
+    <p class="title">کار های مفید</p>
+    <div>
+        <p>mahdiar : <span>${sumMahdiar}</span></p>
+        <p>amin : <span>${sumAmin}</span></p>
+        <p>amir abbas : <span>${sumAbbas}</span></p>
+    </div>
+    `;
 }
-// backHistory.addEventListener('click', function() {
-//     history.back();
-// });
+workMofid();
+// 
+// 
+// 
+let sumMahdiar = 0;
+let sumAmin = 0;
+let sumAbbas = 0;
+
+function first(subject) {
+    dataBase[0].forEach(function(e) {
+        sumMahdiar = sumMahdiar + +e[subject];
+    });
+    // 
+    dataBase[1].forEach(function(e) {
+        sumAmin = sumAmin + +e[subject];
+    });
+    // 
+    dataBase[2].forEach(function(e) {
+        sumAbbas = +sumAbbas + +e[subject];
+    });
+    // 
+    let subjects = [sumAbbas, sumAmin, sumMahdiar];
+    let firstPerson = null;
+    (function() {
+        // first Person
+        let bigger = null;
+        if (subject == 'wasted') {
+            bigger = Math.min(sumAbbas, sumAmin, sumMahdiar);
+        } else {
+            bigger = Math.max(sumAbbas, sumAmin, sumMahdiar);
+        }
+        let firstPersonNumber = null;
+        subjects.forEach(function(e) {
+            if (e == bigger) {
+                return firstPersonNumber = e;
+            }
+        });
+        // 
+        firstPerson = a(firstPersonNumber);
+    })();
+    firstOneContainer.insertAdjacentHTML('beforeend', `
+    <p>${subject} : <span>${firstPerson}</span></p>
+    `);
+}
+subjects.forEach(function(subject) {
+    first(subject);
+});
+
+function a(s) {
+    let person = null;
+    switch (s) {
+        case sumMahdiar:
+            person = "mahdiar";
+            break;
+        case sumAmin:
+            person = "amin";
+            break;
+        case sumAbbas:
+            person = "amir abbas";
+            break;
+    }
+    return person;
+}
