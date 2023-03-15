@@ -228,7 +228,6 @@ body {
   text-align: center;
   font-size: 20px;
   margin-bottom: 10px;
-  font-weight: bold;
 }
 
 .a span {
@@ -257,7 +256,11 @@ body {
 }
 
 .title-news {
-  background-color: rebeccapurple;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 * {
