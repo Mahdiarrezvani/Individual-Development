@@ -246,7 +246,7 @@ body {
   margin: 10px 0;
 }
 
-.mofid div {
+.mofid-container div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

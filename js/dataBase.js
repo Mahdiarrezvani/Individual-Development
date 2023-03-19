@@ -17,8 +17,3 @@ export let dataBase = [
         ...month2Abbas
     ],
 ];
-// export let userBtn = [
-//     { id: 0, name: "mahdiar" },
-//     { id: 1, name: "amin" },
-//     { id: 2, name: "amir abbas" },
-// ];

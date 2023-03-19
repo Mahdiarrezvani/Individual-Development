@@ -1,14 +1,13 @@
 import { dataBase } from './dataBase.js'
+let url = new URLSearchParams(location.search);
+let subject = url.get('subject');
 let resultMahdiar = document.querySelector('.mahdiar');
 let resultAbbas = document.querySelector('.abbas');
 let resultAmin = document.querySelector('.amin');
 let subjectElem = document.querySelector('.subject');
 let fewDay = document.querySelector('.few-day');
-//
 // باید کلین بشه مثل app.js
 // البته همونم باید کلین بشه
-let url = new URLSearchParams(location.search);
-let subject = url.get('subject');
 switch (subject) {
     case 'learning':
         fewDay.innerHTML = "in " + (dataBase[0].length - 30) + " day";
@@ -19,22 +18,25 @@ switch (subject) {
 }
 subjectElem.innerHTML = subject;
 let sumMahdiar = 0;
-dataBase[0].forEach(function(e) {
-    sumMahdiar = sumMahdiar + +e[subject];
-});
-resultMahdiar.innerHTML = `<div>mahdiar : ${sumMahdiar} min</div>${average(sumMahdiar)}`;
 let sumAmin = 0;
-dataBase[1].forEach(function(e) {
-    sumAmin = sumAmin + +e[subject];
-});
-resultAmin.innerHTML = `<div>amin : ${sumAmin} min</div>${average(sumAmin)}`;
 let sumAbbas = 0;
-dataBase[2].forEach(function(e) {
-    sumAbbas = +sumAbbas + +e[subject];
-});
-resultAbbas.innerHTML = `<div>amir abbas : ${sumAbbas}</div>${average(sumAbbas)}`;
-// 
-let array = [sumAbbas, sumAmin, sumMahdiar];
+let array = [];
+// محاسبه جمع موضوع مورد نظر
+(function() {
+    let information = [
+        { id: 0, name: 'mahdiar', storage: sumMahdiar, elem: resultMahdiar },
+        { id: 1, name: 'amin', storage: sumAmin, elem: resultAmin },
+        { id: 2, name: 'amir abbas', storage: sumAbbas, elem: resultAbbas }
+    ];
+    information.forEach(function(info) {
+        dataBase[info.id].forEach(function(e) {
+            info.storage = info.storage + +e[subject];
+        });
+        info.elem.innerHTML = `<div>${info.name} : ${info.storage} min</div>${average(info.storage)}`;
+    });
+    array = [sumMahdiar = information[0].storage, sumAmin = information[1].storage, sumAbbas = information[2].storage];
+})();
+
 let firstPerson = null;
 let lastPerson = null;
 (function() {
@@ -47,7 +49,7 @@ let lastPerson = null;
         }
     });
     // 
-    firstPerson = a(firstPersonNumber);
+    firstPerson = findPerson(firstPersonNumber);
 })();
 
 (function() {
@@ -59,7 +61,7 @@ let lastPerson = null;
             return lastPersonNumber = e;
         }
     });
-    lastPerson = a(lastPersonNumber);
+    lastPerson = findPerson(lastPersonNumber);
 })();
 // For Wasted Time
 let firstOne = document.querySelector('.first-one');
@@ -84,8 +86,8 @@ function average(person) {
     }
     return `<div>average per day : ${average}</div>`;
 }
-// نام گذاری رو درست کن
-function a(s) {
+// یکی دیگه براز اسم متغیر رو خیلی خوب نیست
+function findPerson(s) {
     let person = null;
     switch (s) {
         case sumMahdiar:
