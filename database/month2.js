@@ -11,6 +11,8 @@ let month2Mahdiar = [
     { date: "1401/12/25", day: "thursday", lesson: "0", code: "0", wasted: "90", study: "10", english: "23", learning: '0' },
     { date: "1401/12/26", day: "friday", lesson: "65", code: "37", wasted: "180", study: "0", english: "20", learning: '16' },
     { date: "1401/12/27", day: "saturday", lesson: "0", code: "67", wasted: "120", study: "17", english: "23", learning: '28' },
+    { date: "1401/12/28", day: "sunday", lesson: "46", code: "8", wasted: "180", study: "0", english: "20", learning: '38' },
+    { date: "1401/12/29", day: "minday", lesson: "0", code: "30", wasted: "180", study: "33", english: "24", learning: '25' },
 ];
 let month2Amin = [
     { date: "1401/12/16", day: "tuesday", lesson: "0", code: "91", wasted: "180", study: "0", english: "0", learning: '0' },
@@ -25,6 +27,8 @@ let month2Amin = [
     { date: "1401/12/25", day: "thursday", lesson: "104", code: "128", wasted: "150", study: "15", english: "61", learning: '60' },
     { date: "1401/12/26", day: "friday", lesson: "73", code: "0", wasted: "120", study: "0", english: "60", learning: '30' },
     { date: "1401/12/27", day: "saturday", lesson: "135", code: "71", wasted: "90", study: "16", english: "50", learning: '40' },
+    { date: "1401/12/28", day: "sunday", lesson: "0", code: "95", wasted: "90", study: "0", english: "45", learning: '10' },
+    { date: "1401/12/29", day: "minday", lesson: "0", code: "73", wasted: "150", study: "0", english: "57", learning: '18' },
 ];
 let month2Abbas = [
     { date: "1401/12/16", day: "tuesday", lesson: "0", code: "0", wasted: "360", study: "0", english: "0", learning: '0' },
@@ -39,5 +43,7 @@ let month2Abbas = [
     { date: "1401/12/25", day: "thursday", lesson: "0", code: "140", wasted: "60", study: "20", english: "0", learning: '25' },
     { date: "1401/12/26", day: "friday", lesson: "90", code: "210", wasted: "60", study: "0", english: "40", learning: '40' },
     { date: "1401/12/27", day: "saturday", lesson: "0", code: "110", wasted: "39", study: "0", english: "0", learning: '0' },
+    { date: "1401/12/28", day: "sunday", lesson: "0", code: "0", wasted: "0", study: "0", english: "0", learning: '0' },
+    { date: "1401/12/29", day: "minday", lesson: "0", code: "200", wasted: "180", study: "0", english: "0", learning: '0' },
 ];
 export { month2Mahdiar, month2Amin, month2Abbas };
