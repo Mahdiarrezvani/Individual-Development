@@ -13,9 +13,9 @@ function workMofid() {
         { id: 1, name: 'amin', storage: sumAmin },
         { id: 2, name: 'amir abbas', storage: sumAbbas }
     ];
-    information.forEach(function(info) {
-        dataBase[info.id].forEach(function(e) {
-            subjectsMofid.forEach(function(subject) {
+    information.forEach(function (info) {
+        dataBase[info.id].forEach(function (e) {
+            subjectsMofid.forEach(function (subject) {
                 info.storage = info.storage + +e[subject];
             });
         });
@@ -32,9 +32,10 @@ function workMofid() {
         }
     });
     usefulTimeElem.innerHTML = `
-        <p>mahdiar: <span>${sumMahdiar}</span></p>
-        <p>amin: <span>${sumAmin}</span></p>
-        <p>amir abbas: <span>${sumAbbas}</span></p>`;
+    <p>mahdiar: <span>${sumMahdiar}</span></p>
+    <p>amin: <span>${sumAmin}</span></p>
+    <p>amir abbas: <span>${sumAbbas}</span></p>`;
+    average(sumMahdiar, sumAmin, sumAbbas)
 }
 workMofid();
 // Firs One
@@ -49,14 +50,14 @@ function first(subject) {
         { id: 1, name: 'amin', storage: sumAmin },
         { id: 2, name: 'amir abbas', storage: sumAbbas }
     ];
-    information.forEach(function(info) {
-        dataBase[info.id].forEach(function(e) {
+    information.forEach(function (info) {
+        dataBase[info.id].forEach(function (e) {
             info.storage = info.storage + +e[subject];
         });
     });
     let storages = [sumMahdiar = information[0].storage, sumAmin = information[1].storage, sumAbbas = information[2].storage];
     let firstPerson = null;
-    (function() {
+    (function () {
         // first Person
         let bigger = null;
         if (subject == 'wasted') {
@@ -65,7 +66,7 @@ function first(subject) {
             bigger = Math.max(sumAbbas, sumAmin, sumMahdiar);
         }
         let firstPersonNumber = null;
-        storages.forEach(function(e) {
+        storages.forEach(function (e) {
             if (e == bigger) {
                 return firstPersonNumber = e;
             }
@@ -77,7 +78,7 @@ function first(subject) {
     <p>${subject} : <span>${firstPerson}</span></p>
     `);
 }
-subjects.forEach(function(subject) {
+subjects.forEach(function (subject) {
     first(subject);
 });
 // یکی دیگه براز اسم متغیر رو خیلی خوب نیست
@@ -95,4 +96,17 @@ function findPerson(s) {
             break;
     }
     return person;
+}
+// average
+// صدا زده شده workMofid داخل
+function average(sumMahdiar, sumAmin, sumAbbas) {
+    let numberDays = dataBase[0].length;
+    let averageElem = document.querySelector('.average');
+    let mahdiar = Math.floor(sumMahdiar / numberDays);
+    let amin = Math.floor(sumAmin / numberDays);
+    let abbas = Math.floor(sumAbbas / numberDays);
+    averageElem.innerHTML = `
+    <p>mahdiar: <span>${mahdiar}</span></p>
+    <p>amin: <span>${amin}</span></p>
+    <p>amir abbas: <span>${abbas}</span></p>`;
 }

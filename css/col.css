@@ -216,7 +216,7 @@ body {
   font-weight: normal;
 }
 
-.a {
+.container-news {
   background-color: #222;
   padding: 10px;
   border-radius: 10px;
@@ -224,13 +224,13 @@ body {
   margin-bottom: 15px;
 }
 
-.a .title {
+.container-news .title {
   text-align: center;
   font-size: 20px;
   margin-bottom: 10px;
 }
 
-.a span {
+.container-news span {
   color: #eeff00;
   font-size: 15px;
 }
@@ -246,7 +246,7 @@ body {
   margin: 10px 0;
 }
 
-.mofid-container div {
+.mofid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
