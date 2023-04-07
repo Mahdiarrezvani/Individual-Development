@@ -255,6 +255,15 @@ body {
           justify-content: space-between;
 }
 
+.average {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .title-news {
   text-align: center;
   margin-bottom: 15px;

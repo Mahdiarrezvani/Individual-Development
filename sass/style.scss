@@ -102,15 +102,15 @@ body {
 }
 
 .news {
-    .first-one {
-        .first-one-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-        }
 
-        p {
-            margin: 10px 0;
-        }
+    .first-one-container,
+    .last-one-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    p {
+        margin: 10px 0;
     }
 }
 

@@ -235,14 +235,15 @@ body {
   font-size: 15px;
 }
 
-.news .first-one .first-one-container {
+.news .first-one-container,
+.news .last-one-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
 }
 
-.news .first-one p {
+.news p {
   margin: 10px 0;
 }
 
