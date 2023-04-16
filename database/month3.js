@@ -5,6 +5,11 @@ let month3Mahdiar = [
     { date: "1402/01/20", day: "sunday", lesson: "0", code: "61", wasted: "240", study: "0", english: "31", learning: '11' },
     { date: "1402/01/21", day: "monday", lesson: "231", code: "64", wasted: "90", study: "0", english: "23", learning: '21' },
     { date: "1402/01/22", day: "tuesday", lesson: "10", code: "47", wasted: "200", study: "0", english: "51", learning: '39' },
+    { date: "1402/01/23", day: "wednesday", lesson: "213", code: "98", wasted: "120", study: "0", english: "11", learning: '10' },
+    { date: "1402/01/24", day: "thursday", lesson: "110", code: "65", wasted: "300", study: "0", english: "30", learning: '27' },
+    { date: "1402/01/25", day: "friday", lesson: "150", code: "142", wasted: "10", study: "0", english: "11", learning: '13' },
+    { date: "1402/01/26", day: "saturday", lesson: "120", code: "0", wasted: "0", study: "0", english: "27", learning: '0' },
+
 ];
 let month3Amin = [
     { date: "1402/01/17", day: "thursday", lesson: "148", code: "0", wasted: "30", study: "70", english: "0", learning: '0' },
@@ -13,6 +18,10 @@ let month3Amin = [
     { date: "1402/01/20", day: "sunday", lesson: "49", code: "0", wasted: "90", study: "73", english: "25", learning: '0' },
     { date: "1402/01/21", day: "monday", lesson: "189", code: "20", wasted: "150", study: "16", english: "0", learning: '0' },
     { date: "1402/01/22", day: "tuesday", lesson: "60", code: "63", wasted: "120", study: "57", english: "0", learning: '8' },
+    { date: "1402/01/23", day: "wednesday", lesson: "176", code: "49", wasted: "45", study: "25", english: "0", learning: '84' },
+    { date: "1402/01/24", day: "thursday", lesson: "208", code: "30", wasted: "90", study: "31", english: "0", learning: '40' },
+    { date: "1402/01/25", day: "friday", lesson: "144", code: "135", wasted: "240", study: "34", english: "0", learning: '36' },
+    { date: "1402/01/26", day: "saturday", lesson: "0", code: "0", wasted: "60", study: "38", english: "0", learning: '0' },
 ];
 let month3Abbas = [
     { date: "1402/01/17", day: "thursday", lesson: "0", code: "140", wasted: "60", study: "0", english: "0", learning: '0' },
@@ -21,6 +30,10 @@ let month3Abbas = [
     { date: "1402/01/20", day: "sunday", lesson: "120", code: "30", wasted: "155", study: "0", english: "0", learning: '30' },
     { date: "1402/01/06", day: "day", lesson: "190", code: "125", wasted: "100", study: "0", english: "0", learning: '9' },
     { date: "1402/01/22", day: "tuesday", lesson: "120", code: "51", wasted: "160", study: "0", english: "0", learning: '0' },
+    { date: "1402/01/23", day: "wednesday", lesson: "120", code: "70", wasted: "80", study: "0", english: "0", learning: '0' },
+    { date: "1402/01/24", day: "thursday", lesson: "120", code: "175", wasted: "100", study: "30", english: "0", learning: '35' },
+    { date: "1402/01/25", day: "friday", lesson: "140", code: "175", wasted: "50", study: "0", english: "0", learning: '24' },
+    { date: "1402/01/26", day: "saturday", lesson: "80", code: "0", wasted: "120", study: "0", english: "0", learning: '0' },
 ];
 export { month3Mahdiar, month3Amin, month3Abbas };
 // { date: "1402/01/06", day: "day", lesson: "0", code: "0", wasted: "0", study: "0", english: "0", learning: '0' },
