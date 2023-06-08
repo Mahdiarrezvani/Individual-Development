@@ -28,7 +28,7 @@ let month4Mahdiar = [
     { date: "1402/03/11", day: "thursday", lesson: "0", code: "144", wasted: "240", study: "19", english: "0", learning: "13" },
     { date: "1402/03/12", day: "firday", lesson: "42", code: "120", wasted: "120", study: "0", english: "0", learning: "0" },
     { date: "1402/03/13", day: "saturday", lesson: "120", code: "0", wasted: "180", study: "18", english: "0", learning: "0" },
-    { date: "1402/03/14", day: "sunday", lesson: "38", code: "255", wasted: "180", study: "10", english: "0", learning: "0" },
+    { date: "1402/03/14", day: "sunday", lesson: "38", code: "255", wasted: "180", study: "19", english: "0", learning: "0" },
 ];
 let month4Amin = [
     { date: "1402/02/16", day: "saturday", lesson: "118", code: "45", wasted: "270", study: "0", english: "0", learning: "45" },
