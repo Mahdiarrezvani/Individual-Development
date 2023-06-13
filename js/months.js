@@ -1,5 +1,3 @@
-// let prompts = prompt('قصد دارید در هر صحفه چند تا از باکس ها رو ببینید؟؟');
-// 
 import { dataBase } from './dataBase.js'
 let currentPage = 1;
 let numberShow = 30;

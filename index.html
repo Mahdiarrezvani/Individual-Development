@@ -1,63 +1,72 @@
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Individual Development</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="top-bar">
-            <button class="btn-open-menu">
+      <div class="top-bar">
+        <button class="btn-open-menu">
           <i class="fa-sharp fa-solid fa-bars"></i>
         </button>
-        </div>
-        <div class="menu">
-            <button class="close-menu-btn">
+      </div>
+      <div class="menu">
+        <button class="close-menu-btn">
           <i class="fa-sharp fa-solid fa-xmark"></i>
         </button>
-            <ul>
-                <!-- firstOne -->
-                <li class="firstOne label">
-                    first one
-                    <ul class="under-menu firstOne-ul"></ul>
-                </li>
-                <!-- month -->
-                <li class="month label">
-                    month
-                    <ul class="under-menu month-ul"></ul>
-                </li>
-            </ul>
+        <ul>
+          <!-- firstOne -->
+          <li class="firstOne label">
+            first one
+            <ul class="under-menu firstOne-ul"></ul>
+          </li>
+          <!-- month -->
+          <li class="month label">
+            month
+            <ul class="under-menu month-ul"></ul>
+          </li>
+          <!-- Challenges -->
+          <li class="challenges label">
+            challenges
+            <ul class="under-menu challenges-ul"></ul>
+          </li>
+        </ul>
+      </div>
+      <div class="news">
+        <p class="title-news">news</p>
+        <div class="first-one container-news">
+          <p class="title">fitst one</p>
+          <div class="first-one-container"></div>
         </div>
-        <div class="news">
-            <p class="title-news">news</p>
-            <div class="first-one container-news">
-                <p class="title">fitst one</p>
-                <div class="first-one-container"></div>
-            </div>
 
-            <div class="last-one container-news">
-                <p class="title">last one</p>
-                <div class="last-one-container"></div>
-            </div>
-
-            <div class="container-news">
-                <p class="title">useful time</p>
-                <div class="mofid"></div>
-            </div>
-
-            <div class="average-useful-time container-news">
-                <p class="title">Average Useful Time</p>
-                <div class="average"></div>
-            </div>
+        <div class="last-one container-news">
+          <p class="title">last one</p>
+          <div class="last-one-container"></div>
         </div>
+
+        <div class="container-news">
+          <p class="title">useful time</p>
+          <div class="mofid"></div>
+        </div>
+
+        <div class="average-useful-time container-news">
+          <p class="title">Average Useful Time</p>
+          <div class="average"></div>
+        </div>
+        <!-- <div class="challenges container-news">
+          <p class="title">challenges</p>
+        </div> -->
+      </div>
     </div>
-</body>
-<script src="js/app.js" type="module"></script>
-<script src="js/menu.js" type="module"></script>
-
+  </body>
+  <script src="js/app.js" type="module"></script>
+  <script src="js/menu.js" type="module"></script>
 </html>

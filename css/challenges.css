@@ -273,60 +273,36 @@ body {
   text-transform: uppercase;
 }
 
-.container {
+* {
   text-transform: capitalize;
 }
 
-.container .title {
-  padding: 5px 0;
-  font-size: 22px;
+table,
+tr,
+td {
+  border: 3px solid #eeff00;
+  border-collapse: collapse;
+  padding: 8px;
+  text-align: center;
+}
+
+table {
+  margin: 0 auto;
+}
+
+.title {
+  margin: 15px 0;
+  font-size: 25px;
   font-weight: bold;
   text-align: center;
+}
+
+.state-challenge-end {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 30px;
   background-color: #eeff00;
   color: black;
-}
-
-.container div p {
-  text-align: center;
-  font-size: 21px;
-  margin-top: 10px;
   font-weight: bold;
 }
-
-.container ul {
-  border-bottom: 2px solid #eeff00;
-}
-
-li {
-  list-style: none;
-  margin: 20px 7px;
-  font-size: 20px;
-}
-
-@media screen and (min-width: 1500px) {
-  ul {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media screen and (min-width: 992px) {
-  ul {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media screen and (min-width: 578px) {
-  ul {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
-}
-/*# sourceMappingURL=col.css.map */
+/*# sourceMappingURL=challenges.css.map */
