@@ -1,8 +1,8 @@
 export const dataBase = {
     pushUp: {
-        infoChallenge: { start: '1402/02/09', end: '1402/02/02', period: '7 day', target: '300' },
-        mahdiar: { name: 'mahdiar', state: '👎', result: '', arrayChallengeProcess: [] },
-        amin: { name: 'amin', state: '👎', result: '', arrayChallengeProcess: [] },
-        abbas: { name: 'abbas', state: '👎', result: '', arrayChallengeProcess: [] }
+        infoChallenge: { start: '1402/03/25', end: '1402/03/27', period: '3 day', target: '100' },
+        mahdiar: { name: 'mahdiar', state: '👎', result: 0, arrayChallengeProcess: [] },
+        amin: { name: 'amin', state: '👎', result: 0, arrayChallengeProcess: [] },
+        abbas: { name: 'abbas', state: '👎', result: 0, arrayChallengeProcess: [] }
     },
 }
