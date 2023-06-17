@@ -18,7 +18,7 @@ function stateChallen() {
     informationChallengeElem.insertAdjacentHTML('beforeend', `
         <td>${infoChallenge.start}</td>
         <td>${infoChallenge.end}</td>
-        <td>${infoChallenge.period}</td>
+        <td>${infoChallenge.period} day</td>
         <td>${infoChallenge.target}</td>`);
 }
 function createSectionInfo() {
@@ -55,7 +55,7 @@ function sumNumbersChallenge() {
     checkIsSucssesfullChallenge(mahdiar, amin, abbas)
 }
 function checkIsSucssesfullChallenge(mahdiar, amin, abbas) {
-    let target = +challenge.infoChallenge.target;
+    let target = challenge.infoChallenge.target;
     if (mahdiar >= target) {
         challenge.mahdiar.state = '👍';
     }
@@ -78,7 +78,7 @@ function createResult() {
     }
 }
 function checkIsEndChallenge() {
-    if (+challenge.infoChallenge.period == challenge.mahdiar.arrayChallengeProcess.length) {
+    if (challenge.infoChallenge.period <= challenge.mahdiar.arrayChallengeProcess.length) {
         stateChallengeEnd.innerHTML = 'end of the challenge'
         stateChallengeEnd.style.backgroundColor = "#ff1414";
     } else {
