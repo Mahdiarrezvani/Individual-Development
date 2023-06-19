@@ -13,7 +13,7 @@ let month = [
 ];
 let challenges = [
     { href: 'pages/challenges.html?challenge=pushUp', title: 'push up' },
-    // { href: 'pages/challenges.html?challenge=', title: '' },
+    { href: 'pages/challenges.html?challenge=lesson', title: 'lesson' },
     // { href: 'pages/challenges.html?challenge=', title: '' },
 ];
 // 
