@@ -80,7 +80,7 @@ function createResult() {
     for (let a = 0; a < 3; a++) {
         resultChallenge.insertAdjacentHTML('beforeend', `
         <tr>
-            <td>${challenge[persons[a]].name}</td>
+        <td>${challenge[persons[a]].name}</td>
             <td>${challenge[persons[a]].state}</td>
             <td>${challenge[persons[a]].result}</td>
         </tr>`);
