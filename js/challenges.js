@@ -1,17 +1,26 @@
 import { dataBase } from "../database/dataBaseChallenges.js";
 // ! متغیر ها
+let containerChallnge = document.querySelector('.container-challnge')
+let backHistoryBtn = document.querySelector('.back-history')
 let informationChallengeElem = document.querySelector('.information-challenge');
 let processChallenges = document.querySelector('.process-challenges');
 let resultChallenge = document.querySelector('.result-challenge')
 let stateChallengeEnd = document.querySelector('.state-challenge-end')
-let challenge;
-witchChallenge()
-let numberDay = challenge.mahdiar.arrayChallengeProcess.length;
+let challenge, getChallengeDB, getChallengeParams, idChallenge, numberDay;
+let containerBtnChallenge = document.querySelector('.container-btn-challenge')
+containerChallnge.style.display = "none"
 let persons = ['mahdiar', 'amin', 'abbas'];
+getParams()
 // ! Functions
-function witchChallenge() {
+function backHistory() {
+    history.back();
+}
+function getParams() {
     let params = new URLSearchParams(location.search);
-    challenge = dataBase[params.get('challenge')];
+    idChallenge = params.get('id') - 1;
+    getChallengeParams = params.get('challenge');
+    getChallengeDB = dataBase[getChallengeParams]
+    challenge = getChallengeDB[idChallenge];
 }
 function stateChallen() {
     let infoChallenge = challenge.infoChallenge;
@@ -79,14 +88,35 @@ function createResult() {
 }
 function checkIsEndChallenge() {
     if (challenge.infoChallenge.period <= challenge.mahdiar.arrayChallengeProcess.length) {
-        stateChallengeEnd.innerHTML = 'end of the challenge'
+        stateChallengeEnd.innerHTML = 'end of the challenge';
         stateChallengeEnd.style.backgroundColor = "#ff1414";
     } else {
         stateChallengeEnd.innerHTML = 'doing the challenge'
     }
 }
+function createBtnChallngeId() {
+    let numberChallenge = 1;
+    getChallengeDB.forEach(function (info) {
+        // let infoChallenge=info.infoChallenge
+        containerBtnChallenge.insertAdjacentHTML('beforeend', `
+        <button><a href="challenges.html?challenge=${getChallengeParams}&id=${numberChallenge}">${numberChallenge}</a></button>`);
+        // todo sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssasddas
+        // <button><a href="challenges.html?challenge=${getChallengeParams}&id=${numberChallenge}"><span>${infoChallenge.start}</span><span>${infoChallenge.end}</span><span>${infoChallenge.period}</span><span>${infoChallenge.target}</span></a></button>`);
+        numberChallenge++;
+    })
+}
 // ! Execution Of Function || اجرای تابع ها
-stateChallen();
-createSectionInfo();
-sumNumbersChallenge();
-checkIsEndChallenge();
+backHistoryBtn.addEventListener('click', backHistory);
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+if (idChallenge == -1) {
+    containerBtnChallenge.style.display = "grid"
+    createBtnChallngeId()
+} else {
+    containerBtnChallenge.style.display = "none"
+    containerChallnge.style.display = "block"
+    numberDay = challenge.mahdiar.arrayChallengeProcess.length;
+    stateChallen();
+    createSectionInfo();
+    sumNumbersChallenge();
+    checkIsEndChallenge();
+}

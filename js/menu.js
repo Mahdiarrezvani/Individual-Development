@@ -12,6 +12,7 @@ let month = [
     { href: 'pages/months.html?name=amirAbbas&dataBase=2', title: 'amir abbas' },
 ];
 let challenges = [
+    // &id=1
     { href: 'pages/challenges.html?challenge=pushUp', title: 'push up' },
     { href: 'pages/challenges.html?challenge=lesson', title: 'lesson' },
     // { href: 'pages/challenges.html?challenge=', title: '' },

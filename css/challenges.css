@@ -277,6 +277,40 @@ body {
   text-transform: capitalize;
 }
 
+.back-history {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  left: 10px;
+  padding: 2px 7px;
+  top: 70px;
+  color: #eeff00;
+}
+
+.container-btn-challenge {
+  margin: 15px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  grid-gap: 7px;
+}
+
+.container-btn-challenge button {
+  border: none;
+  background-color: #eeff00;
+}
+
+.container-btn-challenge a {
+  padding: 14px 0;
+  display: block;
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+}
+
 table,
 tr,
 td {
