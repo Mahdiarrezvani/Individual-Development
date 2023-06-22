@@ -10,9 +10,9 @@ export const dataBase = {
     lesson: [
         {
             infoChallenge: { start: '1402/03/25', end: '1402/03/27', period: 5, target: 1000 },
-            mahdiar: { name: 'mahdiar', state: '👎', result: 0, arrayChallengeProcess: [170, 205, 295, 95] },
-            amin: { name: 'amin', state: '👎', result: 0, arrayChallengeProcess: [180, 251, 104, 122] },
-            abbas: { name: 'abbas', state: '👎', result: 0, arrayChallengeProcess: [130, 140, 225, 180] }
+            mahdiar: { name: 'mahdiar', state: '👎', result: 0, arrayChallengeProcess: [170, 205, 295, 95, 240] },
+            amin: { name: 'amin', state: '👎', result: 0, arrayChallengeProcess: [180, 251, 104, 122, 48] },
+            abbas: { name: 'abbas', state: '👎', result: 0, arrayChallengeProcess: [130, 140, 225, 180, 100] }
         },
     ],
 }
