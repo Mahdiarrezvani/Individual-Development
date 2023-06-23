@@ -1,14 +1,15 @@
 import { dataBase } from "../database/dataBaseChallenges.js";
 // ! متغیر ها
-let containerChallnge = document.querySelector('.container-challnge')
-let backHistoryBtn = document.querySelector('.back-history')
+let title = document.querySelector('.title');
+let containerChallnge = document.querySelector('.container-challnge');
+let backHistoryBtn = document.querySelector('.back-history');
 let informationChallengeElem = document.querySelector('.information-challenge');
 let processChallenges = document.querySelector('.process-challenges');
-let resultChallenge = document.querySelector('.result-challenge')
-let stateChallengeEnd = document.querySelector('.state-challenge-end')
+let resultChallenge = document.querySelector('.result-challenge');
+let stateChallengeEnd = document.querySelector('.state-challenge-end');
 let challenge, getChallengeDB, getChallengeParams, idChallenge, numberDay;
-let containerBtnChallenge = document.querySelector('.container-btn-challenge')
-containerChallnge.style.display = "none"
+let containerBtnChallenge = document.querySelector('.container-btn-challenge');
+containerChallnge.style.display = "none";
 let persons = ['mahdiar', 'amin', 'abbas'];
 getParams()
 // ! Functions
@@ -19,6 +20,8 @@ function getParams() {
     let params = new URLSearchParams(location.search);
     idChallenge = params.get('id') - 1;
     getChallengeParams = params.get('challenge');
+    console.log(getChallengeParams);
+    title.innerHTML = getChallengeParams;
     getChallengeDB = dataBase[getChallengeParams]
     challenge = getChallengeDB[idChallenge];
 }
