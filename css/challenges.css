@@ -157,6 +157,14 @@ body {
   text-transform: capitalize;
 }
 
+.back-history {
+  font-size: 14px;
+}
+
+.back-history span {
+  margin-left: 5px;
+}
+
 .top-bar button {
   background-color: transparent;
   padding: 10px;
@@ -192,6 +200,7 @@ body {
 
 .menu ul a {
   text-decoration: none;
+  color: #fff;
 }
 
 .menu ul li {
@@ -204,16 +213,6 @@ body {
   font-weight: bold;
   text-decoration: none;
   color: white;
-}
-
-.menu .under-menu {
-  display: none;
-  margin: 0;
-}
-
-.menu .under-menu li {
-  font-size: 18px;
-  font-weight: normal;
 }
 
 .container-news {

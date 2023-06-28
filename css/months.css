@@ -157,6 +157,14 @@ body {
   text-transform: capitalize;
 }
 
+.back-history {
+  font-size: 14px;
+}
+
+.back-history span {
+  margin-left: 5px;
+}
+
 .top-bar button {
   background-color: transparent;
   padding: 10px;
@@ -192,6 +200,7 @@ body {
 
 .menu ul a {
   text-decoration: none;
+  color: #fff;
 }
 
 .menu ul li {
@@ -204,16 +213,6 @@ body {
   font-weight: bold;
   text-decoration: none;
   color: white;
-}
-
-.menu .under-menu {
-  display: none;
-  margin: 0;
-}
-
-.menu .under-menu li {
-  font-size: 18px;
-  font-weight: normal;
 }
 
 .container-news {
@@ -273,51 +272,84 @@ body {
   text-transform: uppercase;
 }
 
-.table {
+.title {
+  margin: 15px 0 12px;
+  background-color: #0065fd;
+  border-radius: 7px;
+  padding: 20px 0;
+  font-size: 20px;
   text-align: center;
 }
 
-.container-table {
-  display: inline-block;
-  border-radius: 10px;
-  margin: 10px;
-  width: 260px;
-  padding: 15px;
-  background-color: #222;
-  text-transform: capitalize;
-  font-size: 14px;
+.asdasd {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 7px;
 }
 
-.container-table .user-info {
+.btn-person {
+  border-radius: 7px;
+  padding: 20px 0;
+  text-align: center;
+  border: 2px solid #3B3B3B;
+}
+
+.subject {
+  margin: 50px 0 20px;
+  text-align: center;
+  display: inline-block;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #0065fd;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.table {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
 }
 
-.container-table .user-info p:nth-child(even) {
-  text-align: end;
+.container-table {
+  border-radius: 10px;
+  margin: 2px;
+  padding: 12px;
+  background-color: #222;
+  text-transform: capitalize;
+  font-size: 14px;
+  width: 133px;
 }
 
-.container-table .user-info .name {
-  color: #eeff00;
+.container-table .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #8C8C8C;
+  border-bottom: 1px solid #3F3F3F;
+  padding-bottom: 10px;
 }
 
 .container-table .user-info p {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
-.btn-container {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.btn-container button {
-  margin-left: 10px;
-  background-color: #eeff00;
-  border: none;
-  width: 55px;
-  height: 55px;
-  font-size: 20px;
+@media screen and (min-width: 390px) {
+  .table {
+    width: 365px;
+    margin: 0 auto;
+  }
+  .container-table {
+    width: auto;
+  }
 }
 /*# sourceMappingURL=months.css.map */

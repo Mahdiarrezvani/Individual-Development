@@ -19,6 +19,14 @@ body {
     text-transform: capitalize;
 }
 
+.back-history {
+    font-size: 14px;
+}
+
+.back-history span {
+    margin-left: 5px;
+}
+
 .top-bar {
     button {
         background-color: transparent;
@@ -53,6 +61,7 @@ body {
 
         a {
             text-decoration: none;
+            color: #fff;
         }
 
         li {
@@ -65,17 +74,6 @@ body {
             text-decoration: none;
             color: white;
         }
-    }
-
-    .under-menu {
-        display: none;
-
-        li {
-            font-size: 18px;
-            font-weight: normal;
-        }
-
-        margin: 0;
     }
 }
 
@@ -101,7 +99,7 @@ body {
 
 .news {
 
-    .first-one-container,
+    .activites-container,
     .last-one-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

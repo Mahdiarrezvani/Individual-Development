@@ -1,7 +1,7 @@
 import { dataBase } from './dataBase.js'
 let usefulTimeElem = document.querySelector('.mofid');
 let subjects = ['lesson', 'english', 'study', 'code', 'learning', 'wasted'];
-let firstOneContainer = document.querySelector('.first-one-container');
+let activitesContainer = document.querySelector('.activites-container');
 let lastOneContainer = document.querySelector('.last-one-container');
 let sumMahdiar, sumAmin, sumAbbas;
 //! storage
@@ -37,7 +37,7 @@ function firstOne(subject) {
         }
     });
     let firstPerson = findPerson(firstPersonNumber);
-    firstOneContainer.insertAdjacentHTML('beforeend', `
+    activitesContainer.insertAdjacentHTML('beforeend', `
     <p>${subject} : <span>${firstPerson}</span></p>`);
 }
 //! Last One
