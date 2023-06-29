@@ -234,7 +234,7 @@ body {
   font-size: 15px;
 }
 
-.news .first-one-container,
+.news .activites-container,
 .news .last-one-container {
   display: -ms-grid;
   display: grid;
