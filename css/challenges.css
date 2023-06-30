@@ -311,7 +311,7 @@ body {
 }
 
 .section-btn-number {
-  overflow: scroll;
+  overflow: auto;
   margin-top: 5px;
 }
 
