@@ -3,6 +3,7 @@ import { month2Mahdiar, month2Amin, month2Abbas } from '../database/month2.js'
 import { month3Mahdiar, month3Amin, month3Abbas } from '../database/month3.js'
 import { month4Mahdiar, month4Amin, month4Abbas } from '../database/month4.js'
 import { month5Mahdiar, month5Amin, month5Abbas } from '../database/month5.js'
+import { month6Mahdiar, month6Amin, month6Abbas } from '../database/month6.js'
 export let dataBase = [
     // Mahdiar
     [
@@ -11,6 +12,7 @@ export let dataBase = [
         ...month3Mahdiar,
         ...month4Mahdiar,
         ...month5Mahdiar,
+        ...month6Mahdiar,
     ],
     // Amin
     [
@@ -19,6 +21,7 @@ export let dataBase = [
         ...month3Amin,
         ...month4Amin,
         ...month5Amin,
+        ...month6Amin,
     ],
     // Amir Abbas
     [
@@ -27,5 +30,6 @@ export let dataBase = [
         ...month3Abbas,
         ...month4Abbas,
         ...month5Abbas,
+        ...month6Abbas,
     ],
 ];
