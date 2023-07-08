@@ -6,6 +6,8 @@ let typeChallenge = 'lesson';
 let numberChallenge = 0;
 let arrayChallenge = dataBase[typeChallenge][numberChallenge];
 let numberChallengeElems;
+let subject = document.querySelector('.subject');
+subject.innerHTML = typeChallenge;
 // 
 let activeElemChallenge = document.querySelector('.active-challenge');
 activeElemChallenge.style.backgroundColor = "#252525";
@@ -45,6 +47,7 @@ function createBtnChallnge() {
             bgColorBtnsChallenge();
             e.target.style.backgroundColor = "#252525";
             typeChallenge = e.target.attributes.type.nodeValue;
+            subject.innerHTML = typeChallenge;
             arrayChallenge = dataBase[typeChallenge][0]
             createBtn();
             infoChallenFunc();
@@ -95,6 +98,7 @@ function infoChallenFunc() {
 // createSectionInfo();
 // todo اسم
 function sumNumbersChallenge() {
+    checkIsEndChallenge();
     let lengthArray = arrayChallenge.mahdiar.arrayChallengeProcess;
     let andis = 0;
     let mahdiar = 0;
@@ -138,26 +142,27 @@ function createResult() {
         </div>`);
     }
 }
+// function fewDayFail() {
+//     let fewDayFailElem = document.querySelector('.few-day-fail');
+//     let period = arrayChallenge.infoChallenge.period;
+//     let lastFewDays = arrayChallenge.mahdiar.arrayChallengeProcess.length;
+//     // fewDayFailElem.innerHTML = period - lastFewDays + " past the challenge";
+//     // fewDayFailElem.innerHTML = period - lastFewDays + " days to complete the challenge";
+// }
+// fewDayFail();
+function checkIsEndChallenge() {
+    let isFinishChallenge = document.querySelector('.is-finish-challenge');
+    if (arrayChallenge.infoChallenge.period <= arrayChallenge.mahdiar.arrayChallengeProcess.length) {
+        isFinishChallenge.innerHTML = 'end of the challenge';
+        isFinishChallenge.style.backgroundColor = "#830000";
+        isFinishChallenge.style.color = "white";
+    } else {
+        isFinishChallenge.innerHTML = 'doing the challenge'
+        isFinishChallenge.style.backgroundColor = "#eeff00";
+        isFinishChallenge.style.color = "black";
+    }
+}
 createBtnChallnge();
 createNumberBtn();
 infoChallenFunc();
 sumNumbersChallenge();
-// function checkIsEndChallenge() {
-//     if (challenge.infoChallenge.period <= challenge.mahdiar.arrayChallengeProcess.length) {
-//         stateChallengeEnd.innerHTML = 'end of the challenge';
-//         stateChallengeEnd.style.backgroundColor = "#ff1414";
-//     } else {
-//         stateChallengeEnd.innerHTML = 'doing the challenge'
-//     }
-// }
-// function createBtnChallngeId() {
-//     let numberChallenge = 1;
-//     getChallengeDB.forEach(function (info) {
-//         // let infoChallenge=info.infoChallenge
-//         containerBtnChallenge.insertAdjacentHTML('beforeend', `
-//         <button><a href="challenges.html?challenge=${getChallengeParams}&id=${numberChallenge}">${numberChallenge}</a></button>`);
-//         // todo sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssasddas
-//         // <button><a href="challenges.html?challenge=${getChallengeParams}&id=${numberChallenge}"><span>${infoChallenge.start}</span><span>${infoChallenge.end}</span><span>${infoChallenge.period}</span><span>${infoChallenge.target}</span></a></button>`);
-//         numberChallenge++;
-//     })
-// }

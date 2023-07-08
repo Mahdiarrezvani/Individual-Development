@@ -386,4 +386,13 @@ body {
   display: inline-block;
   padding-bottom: 7px;
 }
+
+.is-finish-challenge {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 7px;
+}
 /*# sourceMappingURL=challenges.css.map */
