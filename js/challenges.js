@@ -99,6 +99,7 @@ function infoChallenFunc() {
 // todo اسم
 function sumNumbersChallenge() {
     checkIsEndChallenge();
+    fewDayFail();
     let lengthArray = arrayChallenge.mahdiar.arrayChallengeProcess;
     let andis = 0;
     let mahdiar = 0;
@@ -142,14 +143,16 @@ function createResult() {
         </div>`);
     }
 }
-// function fewDayFail() {
-//     let fewDayFailElem = document.querySelector('.few-day-fail');
-//     let period = arrayChallenge.infoChallenge.period;
-//     let lastFewDays = arrayChallenge.mahdiar.arrayChallengeProcess.length;
-//     // fewDayFailElem.innerHTML = period - lastFewDays + " past the challenge";
-//     // fewDayFailElem.innerHTML = period - lastFewDays + " days to complete the challenge";
-// }
-// fewDayFail();
+function fewDayFail() {
+    let fewDayFailElem = document.querySelector('.few-day-fail');
+    let period = arrayChallenge.infoChallenge.period;
+    let lastFewDays = arrayChallenge.mahdiar.arrayChallengeProcess.length;
+    if (period - lastFewDays == 0) {
+        fewDayFailElem.innerHTML = "finish";
+    } else {
+        fewDayFailElem.innerHTML = period - lastFewDays + " days left" + "<br><br>"+lastFewDays+" days passed";
+    }
+}
 function checkIsEndChallenge() {
     let isFinishChallenge = document.querySelector('.is-finish-challenge');
     if (arrayChallenge.infoChallenge.period <= arrayChallenge.mahdiar.arrayChallengeProcess.length) {
