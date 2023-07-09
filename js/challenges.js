@@ -150,7 +150,7 @@ function fewDayFail() {
     if (period - lastFewDays == 0) {
         fewDayFailElem.innerHTML = "finish";
     } else {
-        fewDayFailElem.innerHTML = period - lastFewDays + " days left" + "<br><br>"+lastFewDays+" days passed";
+        fewDayFailElem.innerHTML = period - lastFewDays + " days until the end";
     }
 }
 function checkIsEndChallenge() {
