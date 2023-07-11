@@ -16,9 +16,9 @@ export const dataBase = {
         //?                                  doing  doing  doing
         {
             infoChallenge: { start: '1402/04/11', end: '1402/04/20', period: 10, target: 400 },
-            mahdiar: { name: 'mahdiar', state: '👎', result: 0, arrayChallengeProcess: [60, 40, 20, 20, 80, 40, 50, 0] },
-            amin: { name: 'amin', state: '👎', result: 0, arrayChallengeProcess: [0, 20, 0, 30, 0, 0, 50, 0] },
-            abbas: { name: 'abbas', state: '👎', result: 0, arrayChallengeProcess: [10, 20, 30, 20, 0, 10, 20, 50] }
+            mahdiar: { name: 'mahdiar', state: '👎', result: 0, arrayChallengeProcess: [60, 40, 20, 20, 80, 40, 50, 0, 20] },
+            amin: { name: 'amin', state: '👎', result: 0, arrayChallengeProcess: [0, 20, 0, 30, 0, 0, 50, 0, 0] },
+            abbas: { name: 'abbas', state: '👎', result: 0, arrayChallengeProcess: [10, 20, 30, 20, 0, 10, 20, 50, 20] }
         },
     ],
     //!                                         Lesson
@@ -44,9 +44,9 @@ export const dataBase = {
         // ?                                  doing  doing  doing
         {
             infoChallenge: { start: '1402/04/17', end: '1402/04/23', period: 7, target: 1200 },
-            mahdiar: { name: 'mahdiar', state: '👎', result: 0, arrayChallengeProcess: [167, 127] },
-            amin: { name: 'amin', state: '👎', result: 0, arrayChallengeProcess: [135, 195] },
-            abbas: { name: 'abbas', state: '👎', result: 0, arrayChallengeProcess: [100, 160] }
+            mahdiar: { name: 'mahdiar', state: '👎', result: 0, arrayChallengeProcess: [167, 127, 207] },
+            amin: { name: 'amin', state: '👎', result: 0, arrayChallengeProcess: [135, 195, 66] },
+            abbas: { name: 'abbas', state: '👎', result: 0, arrayChallengeProcess: [100, 160, 165] }
         },
     ],
     //!                                         Study
@@ -63,9 +63,9 @@ export const dataBase = {
         //?                                  doing  doing  doing
         {
             infoChallenge: { start: '1402/04/17', end: '1402/04/23', period: 7, target: 2000 },
-            mahdiar: { name: 'mahdiar', state: '👎', result: 0, arrayChallengeProcess: [324, 228] },
-            amin: { name: 'amin', state: '👎', result: 0, arrayChallengeProcess: [150, 195] },
-            abbas: { name: 'abbas', state: '👎', result: 0, arrayChallengeProcess: [240, 220] }
+            mahdiar: { name: 'mahdiar', state: '👎', result: 0, arrayChallengeProcess: [324, 228, 345] },
+            amin: { name: 'amin', state: '👎', result: 0, arrayChallengeProcess: [150, 195, 66] },
+            abbas: { name: 'abbas', state: '👎', result: 0, arrayChallengeProcess: [240, 220, 330] }
         },
     ],
     //!                                         Code
@@ -73,9 +73,9 @@ export const dataBase = {
         //?                                  doing  doing  doing
         {
             infoChallenge: { start: '1402/04/17', end: '1402/04/23', period: 7, target: 900 },
-            mahdiar: { name: 'mahdiar', state: '👎', result: 0, arrayChallengeProcess: [132, 71] },
-            amin: { name: 'amin', state: '👎', result: 0, arrayChallengeProcess: [0, 0] },
-            abbas: { name: 'abbas', state: '👎', result: 0, arrayChallengeProcess: [140, 60] }
+            mahdiar: { name: 'mahdiar', state: '👎', result: 0, arrayChallengeProcess: [132, 71, 138] },
+            amin: { name: 'amin', state: '👎', result: 0, arrayChallengeProcess: [0, 0, 0] },
+            abbas: { name: 'abbas', state: '👎', result: 0, arrayChallengeProcess: [140, 60, 165] }
         },
     ],
 }
