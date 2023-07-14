@@ -44,7 +44,7 @@ export const dataBase = {
         {
             infoChallenge: { start: '1402/04/17', end: '1402/04/23', period: 7, target: 1200 },
             mahdiar: { name: 'mahdiar', state: '👎', result: 0, arrayChallengeProcess: [167, 127, 207, 127, 98, 270] },
-            amin: { name: 'amin', state: '👎', result: 0, arrayChallengeProcess: [135, 195, 66, 0, 0,235] },
+            amin: { name: 'amin', state: '👎', result: 0, arrayChallengeProcess: [135, 195, 66, 0, 0, 235] },
             abbas: { name: 'abbas', state: '👎', result: 0, arrayChallengeProcess: [100, 160, 165, 0, 102, 120] }
         },
     ],
@@ -72,7 +72,7 @@ export const dataBase = {
         //?                                  doing  doing  doing
         {
             infoChallenge: { start: '1402/04/17', end: '1402/04/23', period: 7, target: 900 },
-            mahdiar: { name: 'mahdiar', state: '👎', result: 0, arrayChallengeProcess: [132, 71, 138, 15, 65] },
+            mahdiar: { name: 'mahdiar', state: '👎', result: 0, arrayChallengeProcess: [132, 71, 138, 15, 65, 37] },
             amin: { name: 'amin', state: '👎', result: 0, arrayChallengeProcess: [0, 0, 0, 15, 0, 37, 0] },
             abbas: { name: 'abbas', state: '👎', result: 0, arrayChallengeProcess: [140, 60, 165, 80, 0, 0] }
         },
