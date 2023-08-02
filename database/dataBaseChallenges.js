@@ -40,9 +40,9 @@ export const dataBase = {
         // ?                                  doing  doing  doing
         {
             infoChallenge: { start: '1402/05/04', end: '1402/05/13', period: 10, target: 2700 },
-            mahdiar: { name: 'mahdiar', state: '👎', result: 0, arrayChallengeProcess: [365, 325, 233] },
-            amin: { name: 'amin', state: '👎', result: 0, arrayChallengeProcess: [383, 240, 200] },
-            abbas: { name: 'abbas', state: '👎', result: 0, arrayChallengeProcess: [300, 240, 0] }
+            mahdiar: { name: 'mahdiar', state: '👎', result: 0, arrayChallengeProcess: [365, 325, 233, 294, 265, 324, 280] },
+            amin: { name: 'amin', state: '👎', result: 0, arrayChallengeProcess: [383, 240, 200, 250, 160, 223, 330] },
+            abbas: { name: 'abbas', state: '👎', result: 0, arrayChallengeProcess: [300, 240, 0, 240, 180, 270, 30] }
         },
     ],
     //!                                         Useful Works
