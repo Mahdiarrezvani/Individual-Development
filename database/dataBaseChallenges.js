@@ -43,12 +43,12 @@ export const dataBase = {
             amin: { name: 'amin', state: '👎', result: 0, arrayChallengeProcess: [383, 240, 200, 250, 160, 223, 330, 172, 183, 83] },
             abbas: { name: 'abbas', state: '👎', result: 0, arrayChallengeProcess: [300, 240, 0, 240, 180, 270, 30, 270, 60, 0] }
         },
-         // ?                                  doing  doing  doing
-         {
+        // ?                                  doing  doing  doing
+        {
             infoChallenge: { start: '1402/05/14', end: '1402/05/20', period: 7, target: 1900 },
-            mahdiar: { name: 'mahdiar', state: '👎', result: 0, arrayChallengeProcess: [] },
-            amin: { name: 'amin', state: '👎', result: 0, arrayChallengeProcess: [] },
-            abbas: { name: 'abbas', state: '👎', result: 0, arrayChallengeProcess: [] }
+            mahdiar: { name: 'mahdiar', state: '👎', result: 0, arrayChallengeProcess: [257] },
+            amin: { name: 'amin', state: '👎', result: 0, arrayChallengeProcess: [140] },
+            abbas: { name: 'abbas', state: '👎', result: 0, arrayChallengeProcess: [150] }
         },
     ],
     //!                                         Useful Works
