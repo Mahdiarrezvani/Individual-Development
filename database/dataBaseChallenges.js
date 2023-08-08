@@ -46,9 +46,9 @@ export const dataBase = {
         // ?                                  doing  doing  doing
         {
             infoChallenge: { start: '1402/05/14', end: '1402/05/20', period: 7, target: 1900 },
-            mahdiar: { name: 'mahdiar', state: '👎', result: 0, arrayChallengeProcess: [257, 72] },
-            amin: { name: 'amin', state: '👎', result: 0, arrayChallengeProcess: [140, 250] },
-            abbas: { name: 'abbas', state: '👎', result: 0, arrayChallengeProcess: [150, 220] }
+            mahdiar: { name: 'mahdiar', state: '👎', result: 0, arrayChallengeProcess: [257, 72, 166] },
+            amin: { name: 'amin', state: '👎', result: 0, arrayChallengeProcess: [140, 250, 269] },
+            abbas: { name: 'abbas', state: '👎', result: 0, arrayChallengeProcess: [150, 220, 30] }
         },
     ],
     //!                                         Useful Works
