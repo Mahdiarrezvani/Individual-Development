@@ -10,10 +10,11 @@ $color: #0065fd;
     text-align: center;
 }
 
-.asdasd {
+.person-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 7px;
+    margin-bottom: 3pc;
 }
 
 .btn-person {
@@ -21,20 +22,6 @@ $color: #0065fd;
     padding: 20px 0;
     text-align: center;
     border: 2px solid #3B3B3B;
-}
-
-.subject {
-    margin: 50px 0 20px;
-    text-align: center;
-    display: inline-block;
-    padding-bottom: 3px;
-    border-bottom: 2px solid $color;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.section-title {
-    text-align: center;
 }
 
 .table {
@@ -67,18 +54,21 @@ $color: #0065fd;
     }
 }
 
-// .btn-container {
-//     margin-top: 20px;
-//     text-align: center;
-//     button {
-//         margin-left: 10px;
-//         background-color: $tem-bgColor;
-//         border: none;
-//         width: 55px;
-//         height: 55px;
-//         font-size: 20px;
-//     }
-// }
+.btn-container {
+    margin-top: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 6px;
+
+    button {
+        background-color: $tem-bgColor;
+        border: none;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+
 @media screen and (min-width:390px) {
     .table {
         width: 365px;

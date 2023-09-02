@@ -281,12 +281,13 @@ body {
   text-align: center;
 }
 
-.asdasd {
+.person-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 7px;
+  margin-bottom: 3pc;
 }
 
 .btn-person {
@@ -294,20 +295,6 @@ body {
   padding: 20px 0;
   text-align: center;
   border: 2px solid #3B3B3B;
-}
-
-.subject {
-  margin: 50px 0 20px;
-  text-align: center;
-  display: inline-block;
-  padding-bottom: 3px;
-  border-bottom: 2px solid #0065fd;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.section-title {
-  text-align: center;
 }
 
 .table {
@@ -341,6 +328,23 @@ body {
 
 .container-table .user-info p {
   margin-bottom: 12px;
+}
+
+.btn-container {
+  margin-top: 20px;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  gap: 6px;
+}
+
+.btn-container button {
+  background-color: #eeff00;
+  border: none;
+  height: 50px;
+  font-size: 20px;
 }
 
 @media screen and (min-width: 390px) {
